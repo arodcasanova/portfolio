@@ -4,7 +4,8 @@ import NavLink from 'components/navigation/NavLink';
 import HomeLink from 'components/navigation/HomeLink';
 
 const NavContainer = styled.nav`
-	z-index: 1;
+	position: relative;
+	z-index: 2;
 	display: flex;
 	justify-content: center;
 	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
@@ -34,8 +35,9 @@ const SectionLinks = () => (
 		<NavLink>Video</NavLink>
 		<NavLink>Letter</NavLink>
 		<NavLink>Resume</NavLink>
+		<NavLink>References</NavLink>
 		<NavLink>Portfolio</NavLink>
-		<NavLink>Contact</NavLink>
+		<NavLink>Credits</NavLink>
 	</SectionLinksContainer>
 );
 

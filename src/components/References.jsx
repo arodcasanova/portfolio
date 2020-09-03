@@ -1,8 +1,8 @@
 import React from 'react';
 // import styled from 'styled-components';
 
-const Contact = () => (
-	<h1>Contact</h1>
+const References = () => (
+	<h1>References</h1>
 );
 
-export default Contact;
+export default References;

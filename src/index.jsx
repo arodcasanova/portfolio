@@ -5,17 +5,25 @@ import Navigation from 'components/navigation/Navigation';
 import Video from 'components/Video';
 import Letter from 'components/Letter';
 import Resume from 'components/Resume';
+import References from 'components/References';
 import Portfolio from 'components/Portfolio';
-import Contact from 'components/Contact';
+import Credits from 'components/Credits';
+
+const Main = () => (
+	<main>
+		<Video />
+	    <Letter />
+	    <Resume />
+	    <References />
+	    <Portfolio />
+	    <Credits />
+	</main>
+);
 
 ReactDOM.render(
   <React.StrictMode>
     <Navigation />
-    <Video />
-    <Letter />
-    <Resume />
-    <Portfolio />
-    <Contact />
+    <Main />
   </React.StrictMode>,
   document.getElementById('root')
 );
