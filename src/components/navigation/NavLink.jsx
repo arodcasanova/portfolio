@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { CaptionBold } from 'components/core/Type';
 
 const Link = styled.a`
-	margin-left: 2rem;
-	font-size: 1.4rem;
+	margin-left: 1.2rem;
 `;
 
 const NavLink = ({ children }) => (
 	<Link href=".">
-		{children}
+		<CaptionBold>{children}</CaptionBold>
 	</Link>
 );
 

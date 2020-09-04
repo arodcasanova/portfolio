@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { CaptionBold } from 'components/core/Type';
 
 const HomeContainer = styled.header`
 	display: flex;
@@ -8,15 +9,14 @@ const HomeContainer = styled.header`
 `;
 
 const HomeIcon = styled.div`
-	height: 3rem;
-	width: 3rem;
+	height: 2rem;
+	width: 2rem;
 	border-radius: 100%;
 	background-color: gray;
 `;
 
-const HomeType = styled.h3`
-	margin-left: 1rem;
-	font-size: 1.4rem;
+const HomeType = styled(CaptionBold)`
+	margin-left: .5rem;
 `;
 
 const HomeLink = () => (
