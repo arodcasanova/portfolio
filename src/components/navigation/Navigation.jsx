@@ -17,8 +17,8 @@ const NavGrid = styled.div`
 	align-items: center;
 	padding: 1rem 2rem;
 	width: 100%;
-	max-width: 120rem;
-	@media (max-width: 600px) {
+	max-width: 50rem;
+	@media (max-width: 700px) {
 		grid-template-columns: auto;
 		grid-template-rows: auto 1rem auto;
 	}

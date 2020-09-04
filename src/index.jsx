@@ -14,9 +14,9 @@ const Main = () => (
 		<Video />
 	    <Letter />
 	    <Resume />
-	    <References />
-	    <Portfolio />
-	    <Credits />
+	    {/* <References /> */}
+	    {/* <Portfolio /> */}
+	    {/* <Credits /> */}
 	</main>
 );
 

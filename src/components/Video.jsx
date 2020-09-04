@@ -5,7 +5,8 @@ const VideoFrame = styled.iframe`
 	width: 100%;
 	height: 50rem;
 	border: none;
-	margin-bottom: -2px;
+	margin-bottom: -0.1rem;
+	margin-right: 0;
 `; 
 
 const Video = () => (
