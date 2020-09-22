@@ -1,29 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from 'components/navigation/Navigation';
-import Video from 'components/Video';
-import Letter from 'components/Letter';
-import Resume from 'components/Resume';
-import References from 'components/References';
-import Portfolio from 'components/Portfolio';
-import Credits from 'components/Credits';
+import './index.css';
 
-const Main = () => (
-	<main>
-		<Video />
-	    <Letter />
-	    <Resume />
-	    {/* <References /> */}
-	    {/* <Portfolio /> */}
-	    {/* <Credits /> */}
-	</main>
+const Index = () => (
+	<React.StrictMode> 
+		<Router>
+			<Navigation />
+		</Router>
+	</React.StrictMode>
 );
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Navigation />
-    <Main />
-  </React.StrictMode>,
+  <Index />,
   document.getElementById('root')
 );

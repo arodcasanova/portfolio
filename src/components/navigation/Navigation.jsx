@@ -32,12 +32,9 @@ const SectionLinksContainer = styled.div`
 
 const SectionLinks = () => (
 	<SectionLinksContainer>
-		<NavLink>Video</NavLink>
-		<NavLink>Letter</NavLink>
+		<NavLink>About</NavLink>
+		<NavLink>Work</NavLink>
 		<NavLink>Resume</NavLink>
-		<NavLink>References</NavLink>
-		<NavLink>Portfolio</NavLink>
-		<NavLink>Credits</NavLink>
 	</SectionLinksContainer>
 );
 

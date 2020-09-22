@@ -8,22 +8,10 @@ const HomeContainer = styled.header`
 	justify-content: center;
 `;
 
-const HomeIcon = styled.div`
-	height: 2rem;
-	width: 2rem;
-	border-radius: 100%;
-	background-color: gray;
-`;
-
-const HomeType = styled(CaptionBold)`
-	margin-left: .5rem;
-`;
-
 const HomeLink = () => (
 	<a href=".">
 		<HomeContainer>
-			<HomeIcon />
-			<HomeType>Adrian Rodriguez</HomeType>
+			<CaptionBold>Adrian Rodriguez</CaptionBold>
 		</HomeContainer>
 	</a>
 );
