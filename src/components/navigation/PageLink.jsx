@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 import { CaptionBold } from 'components/core/Type';
 
-const Link = styled.a`
-	margin-left: 1.2rem;
-`;
-
-const NavLink = ({ children }) => (
-	<Link href=".">
+const PageLink = ({ to, children }) => (
+	<NavLink to={to}>
 		<CaptionBold>{children}</CaptionBold>
-	</Link>
+	</NavLink>
 );
 
-export default NavLink;
+export default PageLink;

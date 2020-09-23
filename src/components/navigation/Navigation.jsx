@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavLink from 'components/navigation/NavLink';
+import PageLink from 'components/navigation/PageLink';
 import HomeLink from 'components/navigation/HomeLink';
 
 const NavContainer = styled.nav`
@@ -24,18 +24,24 @@ const NavGrid = styled.div`
 	}
 `;
 
-const SectionLinksContainer = styled.div`
+const PageLinksContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	& > a { 
+		margin-left: 1.25rem;
+	};
+	& :first-child {
+		margin-left: 0;
+	};
 `;
 
-const SectionLinks = () => (
-	<SectionLinksContainer>
-		<NavLink>About</NavLink>
-		<NavLink>Work</NavLink>
-		<NavLink>Resume</NavLink>
-	</SectionLinksContainer>
+const PageLinks = () => (
+	<PageLinksContainer>
+		<PageLink to="/about">About</PageLink>
+		<PageLink to="/work">Work</PageLink>
+		<PageLink to="/resume">Resume</PageLink>
+	</PageLinksContainer>
 );
 
 const Navigation = () => (
@@ -43,7 +49,7 @@ const Navigation = () => (
 		<NavGrid>
 			<HomeLink />
 			<div aria-hidden="true" />
-			<SectionLinks />
+			<PageLinks />
 		</NavGrid>
 	</NavContainer>
 );
